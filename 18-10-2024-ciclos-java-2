@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Escribe una palabra: ");
+        String texto= teclado.nextLine();
+       if (texto.equals("Hola")) {
+            System.out.println("Hola mundo");
+        } else {
+            System.out.println("Me merezco un 5");
+            
+        }
+       
+    }
+}
+
+2.
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Escribe un numero: ");
+        int x;
+        
+        do {
+            x = teclado.nextInt();
+            if(x > 0){
+                 System.out.println("El numero es positivo: ");
+                
+             }
+            else {
+                 System.out.println("Fin del programa");
+            }
+        }while (x >=0);    
+        
+    }
+}
+
+3.
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        int x;
+        do{
+            System.out.print("escribe un numero: ");
+             x = teclado.nextInt();
+              if(x >=0){
+            System.out.println("El numero es positivo:");
+        }
+        
+        else {
+                 System.out.println("Fin del programa");
+            }
+        }while (x >=0);    
+        
+    }
+}
+4.
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.print("Escribe el numero de veces que se repite:");
+        int x = teclado.nextInt();
+        for (int i = 1; i <= x; i++){
+            System.out.println(i);
+        } 
+     
+    }
+}
